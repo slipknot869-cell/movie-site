@@ -14,12 +14,6 @@
       text-align: center;
       color: #222;
     }
-    h2 {
-      color: #0055aa;
-    }
-    p {
-      line-height: 1.5;
-    }
     .movie {
       background-color: #fff;
       padding: 15px;
@@ -27,12 +21,30 @@
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+    .movie img {
+      max-width: 150px;
+      float: left;
+      margin-right: 15px;
+      border-radius: 5px;
+    }
+    .movie::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    h2 {
+      color: #0055aa;
+    }
+    p {
+      line-height: 1.5;
+    }
   </style>
 </head>
 <body>
   <h1>Japanese Movies Explained in English</h1>
 
   <div class="movie">
+    <img src="perfect-blue.jpg" alt="Perfect Blue">
     <h2>Perfect Blue (1997)</h2>
     <p><strong>Director:</strong> Satoshi Kon</p>
     <p><strong>Genre:</strong> Psychological Thriller</p>
@@ -40,11 +52,36 @@
   </div>
 
   <div class="movie">
+    <img src="akira.jpg" alt="Akira">
     <h2>Akira (1988)</h2>
     <p><strong>Director:</strong> Katsuhiro Otomo</p>
     <p><strong>Genre:</strong> Sci-Fi / Cyberpunk</p>
     <p>A dystopian story about biker gangs and psychic powers in post-apocalyptic Neo-Tokyo.</p>
   </div>
+
+  <div class="movie">
+    <img src="spirited-away.jpg" alt="Spirited Away">
+    <h2>Spirited Away (2001)</h2>
+    <p><strong>Director:</strong> Hayao Miyazaki</p>
+    <p><strong>Genre:</strong> Fantasy / Adventure</p>
+    <p>Chihiro becomes trapped in a mysterious spirit world and must find courage and cleverness to save her parents.</p>
+  </div>
+
+  <div class="movie">
+    <img src="your-name.jpg" alt="Your Name">
+    <h2>Your Name (2016)</h2>
+    <p><strong>Director:</strong> Makoto Shinkai</p>
+    <p><strong>Genre:</strong> Romance / Fantasy</p>
+    <p>A story of two teenagers who mysteriously swap bodies and struggle to meet each other across time and space.</p>
+  </div>
+
+  <div class="movie">
+    <img src="tokyo-story.jpg" alt="Tokyo Story">
+    <h2>Tokyo Story (1953)</h2>
+    <p><strong>Director:</strong> Yasujirō Ozu</p>
+    <p><strong>Genre:</strong> Drama</p>
+    <p>An elderly couple visits their grown children in Tokyo, exploring themes of family, aging, and generational change.</p>
+  </div>
+
 </body>
 </html>
-
