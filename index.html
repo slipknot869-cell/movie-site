@@ -6,35 +6,46 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      background-image: url('background.jpg'); /* 背景画像 */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff;
       margin: 20px;
     }
+
     h1 {
       text-align: center;
-      color: #222;
+      color: #ffffcc; /* タイトル文字色 */
+      text-shadow: 2px 2px 4px #000;
     }
+
     .movie {
-      background-color: #fff;
+      background-color: rgba(0, 0, 0, 0.7); /* 半透明の黒背景 */
       padding: 15px;
       margin: 15px 0;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
     }
+
     .movie img {
       max-width: 150px;
       float: left;
       margin-right: 15px;
       border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     }
+
     .movie::after {
       content: "";
       display: block;
       clear: both;
     }
+
     h2 {
-      color: #0055aa;
+      color: #ffcc00;
     }
+
     p {
       line-height: 1.5;
     }
@@ -43,14 +54,7 @@
 <body>
   <h1>Japanese Movies Explained in English</h1>
 
-  <div class="movie">
-    <img src="perfect-blue.jpg" alt="Perfect Blue">
-    <h2>Perfect Blue (1997)</h2>
-    <p><strong>Director:</strong> Satoshi Kon</p>
-    <p><strong>Genre:</strong> Psychological Thriller</p>
-    <p>A story about Mima, a pop idol who becomes an actress and struggles to separate reality from illusion as her fame attracts dangerous obsession.</p>
-  </div>
-
+  <!-- AKIRA -->
   <div class="movie">
     <img src="akira.jpg" alt="Akira">
     <h2>Akira (1988)</h2>
@@ -59,6 +63,7 @@
     <p>A dystopian story about biker gangs and psychic powers in post-apocalyptic Neo-Tokyo.</p>
   </div>
 
+  <!-- Spirited Away -->
   <div class="movie">
     <img src="spirited-away.jpg" alt="Spirited Away">
     <h2>Spirited Away (2001)</h2>
@@ -67,21 +72,15 @@
     <p>Chihiro becomes trapped in a mysterious spirit world and must find courage and cleverness to save her parents.</p>
   </div>
 
+  <!-- Perfect Blue -->
   <div class="movie">
-    <img src="your-name.jpg" alt="Your Name">
-    <h2>Your Name (2016)</h2>
-    <p><strong>Director:</strong> Makoto Shinkai</p>
-    <p><strong>Genre:</strong> Romance / Fantasy</p>
-    <p>A story of two teenagers who mysteriously swap bodies and struggle to meet each other across time and space.</p>
-  </div>
-
-  <div class="movie">
-    <img src="tokyo-story.jpg" alt="Tokyo Story">
-    <h2>Tokyo Story (1953)</h2>
-    <p><strong>Director:</strong> Yasujirō Ozu</p>
-    <p><strong>Genre:</strong> Drama</p>
-    <p>An elderly couple visits their grown children in Tokyo, exploring themes of family, aging, and generational change.</p>
+    <img src="perfect-blue.jpg" alt="Perfect Blue">
+    <h2>Perfect Blue (1997)</h2>
+    <p><strong>Director:</strong> Satoshi Kon</p>
+    <p><strong>Genre:</strong> Psychological Thriller</p>
+    <p>A story about Mima, a pop idol who becomes an actress and struggles to separate reality from illusion as her fame attracts dangerous obsession.</p>
   </div>
 
 </body>
 </html>
+
